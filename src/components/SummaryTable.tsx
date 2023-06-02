@@ -47,12 +47,12 @@ export function SummaryTable() {
 
       <div className="grid grid-rows-7 grid-flow-col gap-3 overflow-x-scroll scrollbar-thin
          scrollbar-thumb-teal-600 hover:scrollbar-thumb-teal-400 scrollbar-track-zinc-600
-          scrollbar-thumb-rounded scrollbar-track-rounded pb-3 pt-3">
+          scrollbar-thumb-rounded scrollbar-track-rounded pl-1 pb-3 pt-3">
         {summary.length > 0 && summaryDates.map(date => {
           const dayInSummary = summary.find(day => {
             return dayjs(date).isSame(day.date, 'day')
           })
-
+          // console.log(dayInSummary, date);
           return (
             <ProcedureDay
               key={date.toString()}

@@ -28,7 +28,7 @@ export function ProceduresList({ date, onCompletedChanged }: ProceduresListProps
         date: date.toISOString(),
       }
     }).then(response => {
-      // console.log(response.data)
+      // console.log(response.data);
       setProceduresInfo(response.data);
     })
   }, [])

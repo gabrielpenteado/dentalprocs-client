@@ -34,8 +34,9 @@ export function PieChart() {
   }
 
   // console.log(procsTitle);
-  console.log(procsTotal);
-
+  // console.log(procsTotal);
+  const procsTotaltoNumber = procsTotal.map(Number)
+  // console.log(procsTotaltoNumber);
   const options = {
     series: procsTotal,
     labels: procsTitle,
@@ -74,7 +75,7 @@ export function PieChart() {
   return (
     <div>
       <Chart
-        series={procsTotal}
+        series={procsTotaltoNumber}
         options={options}
         type="donut"
         width="100%"
