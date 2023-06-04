@@ -32,6 +32,7 @@ export function ProceduresList({ date, onCompletedChanged }: ProceduresListProps
       setProceduresInfo(response.data);
     })
   }, [])
+  // console.log(proceduresInfo);
 
   async function handleToggleProcedure(procedureId: string) {
     await api.patch(`/procedures/${procedureId}/toggle`);

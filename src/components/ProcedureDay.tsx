@@ -25,7 +25,8 @@ export function ProcedureDay({ defaultCompleted = 0, amount = 0, date }: Procedu
   const dayOfWeek = dayjs(date).format('dddd');
 
   const today = dayjs().startOf('day').toDate();
-  const isCurrentDay = dayjs(date).isSame(today);
+  // const isCurrentDay = dayjs(date).isSame(today);
+  const isCurrentDay = dayjs(date).startOf('day').isSame(today);
 
   function handleCompletedChanged(completed: number) {
     setCompleted(completed);
