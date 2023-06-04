@@ -7,7 +7,7 @@ import { ProcedureDay } from "./ProcedureDay";
 import { Tooth } from "@phosphor-icons/react";
 import dayjs from "dayjs";
 
-const weekDays = ["D", "S", "T", "Q", "Q", "S", "S"];
+const weekDays = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
 
 const summaryDates = generateDatesFromYearBeginning();
 
@@ -27,13 +27,14 @@ export function SummaryTable() {
 
   useEffect(() => {
     api.get('summary').then(response => {
+      // console.log(response.data);
       setSummary(response.data);
     })
   }, []) // this empty array make the function inside the useEffect execute only one time(the first time that the component render)
 
   return (
     <div className="w-full flex justify-center">
-      <div className="grid grid-rows-7 grid-flow-row gap-2 pt-3 pb-4">
+      <div className="grid grid-rows-7 grid-flow-row gap-2 pt-3 pb-4 pr-2">
         {weekDays.map((weekDay, index) => {
           return (
             <div
