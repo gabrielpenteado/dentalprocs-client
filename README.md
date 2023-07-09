@@ -36,6 +36,10 @@ The app permit dentists to create new procedures, associating them with specific
   
 </div>
 
+*Website: Render web services have a delay of about 30 seconds in the response of the first request after a period of inactivity while the instance spins up.*
+
+<br>
+
 <div align="center">
   <img src="https://raw.githubusercontent.com/gabrielpenteado/dentalprocs-client/main/public/dentalprocs.gif"    alt="dentalprocs.gif">
 </div>
