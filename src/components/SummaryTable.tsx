@@ -7,11 +7,13 @@ import { ProcedureDay } from "./ProcedureDay";
 import { Tooth } from "@phosphor-icons/react";
 import dayjs from "dayjs";
 
-const weekDays = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
+const weekDays = ["MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"];
+// const weekDays = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
 
 const summaryDates = generateDatesFromYearBeginning();
 
-const minimunSummaryDatesSize = 52 * 7 // 2418 weeks or 24 * 7 = 24 weeks
+const minimunSummaryDatesSize = 366;// 52 * 7 // 24 or 18 weeks 24 * 7 = 24 weeks
+// 365 or 366 - total days of the current year.
 const amountOfDaysToFill = minimunSummaryDatesSize - summaryDates.length;
 // console.log(amountOfDaysToFill);
 
