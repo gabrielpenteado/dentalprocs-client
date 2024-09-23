@@ -15,7 +15,7 @@
   
   <img src="https://img.shields.io/static/v1?label=npm&message=v9.5.0&color=informational&style=flat-square" alt="npm version">
 
-  <img src="https://img.shields.io/website?down_color=red&down_message=offline&style=flat-square&up_color=008000&up_message=online&url=https%3A%2F%2Fdentalprocs.onrender.com" alt="website status">
+  <img src="https://img.shields.io/website?down_color=red&down_message=offline&style=flat-square&up_color=008000&up_message=online&url=https%3A%2F%2Fdentalprocs.vercel.app" alt="website status">
 </div>
 
 ## 🦷 About the project
@@ -29,13 +29,11 @@ The app permit dentists to create new procedures, associating them with specific
 
 <div align="center">
 
-|                                                                          Video                                                                          |                                                                  Website                                                                  |
-| :-----------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------: |
-| [![Youtube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=0X3PRdZceBo) | [![Render](https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=white)](https://dentalprocs.onrender.com) |
+|                                                                          Video                                                                          |                                                              Website                                                               |
+| :-----------------------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------: |
+| [![Youtube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=0X3PRdZceBo) | [![Vercel](https://img.shields.io/badge/Vercel-000?logo=vercel&logoColor=fff&style=for-the-badge)](https://dentalprocs.vercel.app) |
 
 </div>
-
-_Website: Render web services have a delay of about 30 seconds in the response of the first request after a period of inactivity while the instance spins up._
 
 <br>
 
