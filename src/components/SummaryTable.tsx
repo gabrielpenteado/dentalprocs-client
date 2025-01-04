@@ -7,12 +7,16 @@ import { ProcedureDay } from "./ProcedureDay";
 import { Tooth } from "@phosphor-icons/react";
 import dayjs from "dayjs";
 
-const weekDays = ["MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"];
-// const weekDays = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
-
+// const weekDays = ["MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"];
+const weekDays = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
+const firstDayOfYearIndex = dayjs().startOf("year").day();
 const summaryDates = generateDatesFromYearBeginning();
+const rotatedWeekDays = [
+  ...weekDays.slice(firstDayOfYearIndex),
+  ...weekDays.slice(0, firstDayOfYearIndex),
+];
 
-const minimunSummaryDatesSize = 366; // 52 * 7 // 24 or 18 weeks // or 24 * 7 = 24 weeks
+const minimunSummaryDatesSize = 365; // 52 * 7 // 24 or 18 weeks // or 24 * 7 = 24 weeks
 // 365 or 366 - total days in the current year.
 const amountOfDaysToFill = minimunSummaryDatesSize - summaryDates.length;
 // console.log(amountOfDaysToFill);
@@ -37,7 +41,7 @@ export function SummaryTable() {
   return (
     <div className="w-full flex justify-center">
       <div className="grid grid-rows-7 grid-flow-row gap-2 pt-3 pb-4 pr-2">
-        {weekDays.map((weekDay, index) => {
+        {rotatedWeekDays.map((weekDay, index) => {
           return (
             <div
               key={`${weekDay}-${index}`}
